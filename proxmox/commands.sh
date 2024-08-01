@@ -31,4 +31,8 @@ pvecm qdevice remove
 All VMs with the same "Order" value are started in the ascending sequence of their VM IDs, and when Proxmox hits a VM with a configured startup delay, 
 it pauses for N seconds and the continues with the next VM or the next "Order group". 
 
+***Create lxc***
+pct create 100 local:vztmpl/debian-11-standard_11.0-1_amd64.tar.gz --storage local-lvm --hostname lxc-container --net0 name=eth0,bridge=vmbr0,ip=dhcp --memory 8192 --cores 4 --rootfs local-lvm:10 --unprivileged 1 
+
+ 
  
