@@ -28,7 +28,7 @@ rm -rf /etc/corosync/qdevice/net/nssdb/ **on both**
 pvecm qdevice remove
 
 ***Autostart Order***
-
-All VMs with the same "Order" value are started in the ascending sequence of their VM IDs, and when Proxmox hits a VM with a configured startup delay, it pauses for N seconds and the continues with the next VM or the next "Order group". 
+All VMs with the same "Order" value are started in the ascending sequence of their VM IDs, and when Proxmox hits a VM with a configured startup delay, 
+it pauses for N seconds and the continues with the next VM or the next "Order group". 
 
  
