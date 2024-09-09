@@ -25,6 +25,16 @@
 | `docker volume create --driver <driver_name> <volume_name>` | Create a volume with a specific driver|
 
 
+## ***Executing Commands in Containers***
+| Command                                      | Description                                          |
+| -------------------------------------------- | ---------------------------------------------------- |
+| `docker exec -it <container_id> <command>`   | Execute a command inside a running container         |
+| `docker exec -it <container_id> /bin/bash`   | Open a bash shell in a running container             |
+| `docker exec -it <container_id> /bin/sh`     | Open a shell in a running container (if bash not available) |
+| `docker run -it <image_name> /bin/bash`      | Run a container and immediately access its shell     |
+| `docker run -d <image_name> <command>`       | Run a container in detached mode                     |
+
+
 ## ***Image***
 | Command                                      | Description                                          |
 | -------------------------------------------- | ---------------------------------------------------- |
