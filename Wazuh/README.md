@@ -1,4 +1,4 @@
-## **Wazuh Common Commands**
+## **Wazuh**
 | Command                                        | Description                                                |
 |------------------------------------------------|------------------------------------------------------------|
 | `/var/ossec/bin/ossec-control start`           | Start the Wazuh manager                                    |
