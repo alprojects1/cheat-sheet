@@ -1,0 +1,66 @@
+## **Terraform**
+
+### **Plan, Deploy, and Cleanup**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform apply --parallelism=5`              | Number of simultaneous resource operations                  |
+| `terraform apply --auto-approve`               | Create or update infrastructure without confirmation prompt |
+| `terraform destroy --auto-approve`             | Destroy previously-created infrastructure without confirmation prompt |
+| `terraform apply -target=aws_instance.myinstance`| Only apply/deploy changes to targeted resource             |
+| `terraform apply -var myregion=us-east-1`      | Pass a variable via CLI while applying a configuration       |
+| `terraform apply -lock=true`                   | Lock the state file so it can't be modified                 |
+| `terraform apply refresh=false`                | Do not reconcile state file with real-world resources        |
+| `terraform apply plan.out`                     | Use the `plan.out` to deploy infrastructure                 |
+| `terraform plan -destroy`                      | Outputs a destroy plan                                      |
+| `terraform plan -out plan.out`                 | Output the deployment plan to `plan.out`                    |
+| `terraform refresh`                            | Reconcile the state in Terraform state file with real-world resources |
+| `terraform providers`                          | Get information about providers used in the current configuration |
+
+### **State Manipulation**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform state replace-provider hashicorp/aws registry.custom.com/aws` | Replace an existing provider with another   |
+| `terraform state mv aws_iam_role.my_ssm_role module.mymodule` | Move a resource tracked via state to different module |
+| `terraform state show aws_instance.myinstance`  | Show details stored in the Terraform state file             |
+| `terraform state pull > terraform.tfstate`      | Output Terraform state to a file                            |
+| `terraform state rm aws_instance.myinstance`    | Unmanage a resource, delete it from the Terraform state file |
+| `terraform state list`                         | List all resources tracked in the Terraform state file      |
+
+### **Import and Outputs**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform import <resource_type>.<resource> <id>` | Import a Resource                                      |
+| `terraform output -json`                       | List all outputs in JSON format                            |
+| `terraform output <output>`                    | List a specific output                                     |
+| `terraform output`                             | List all outputs                                           |
+
+
+
+### **Format and Validate**
+| Command               | Description                                            |
+|-----------------------|--------------------------------------------------------|
+| `terraform validate`   | Check whether the configuration is valid               |
+| `terraform fmt`        | Reformat your configuration in the standard style      |
+
+
+
+### **Initialize Working Directory**
+| Command               | Description                                            |
+|-----------------------|--------------------------------------------------------|
+| `terraform init`       | Prepare your working directory for other commands      |
+
+
+### **Workspaces**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform workspace select default`           | Change to a workspace                                       |
+| `terraform workspace new <workspace>`          | Create a new workspace                                      |
+| `terraform workspace list`                     | List all workspaces                                         |
+
+
+
+### **Terraform Cloud**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform login`                              | Login to Terraform Cloud with an API token                  |
+| `terraform logout`                             | Logout from Terraform Cloud                                 |
