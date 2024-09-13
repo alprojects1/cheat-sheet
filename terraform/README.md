@@ -1,5 +1,17 @@
 ## **Terraform**
 
+
+### **State Manipulation**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `terraform state replace-provider hashicorp/aws registry.custom.com/aws` | Replace an existing provider with another   |
+| `terraform state mv aws_iam_role.my_ssm_role module.mymodule` | Move a resource tracked via state to different module |
+| `terraform state show aws_instance.myinstance`  | Show details stored in the Terraform state file             |
+| `terraform state pull > terraform.tfstate`      | Output Terraform state to a file                            |
+| `terraform state rm aws_instance.myinstance`    | Unmanage a resource, delete it from the Terraform state file |
+| `terraform state list`                         | List all resources tracked in the Terraform state file      |
+
+
 ### **Plan, Deploy, and Cleanup**
 | Command                                        | Description                                                |
 |------------------------------------------------|------------------------------------------------------------|
@@ -16,15 +28,6 @@
 | `terraform refresh`                            | Reconcile the state in Terraform state file with real-world resources |
 | `terraform providers`                          | Get information about providers used in the current configuration |
 
-### **State Manipulation**
-| Command                                        | Description                                                |
-|------------------------------------------------|------------------------------------------------------------|
-| `terraform state replace-provider hashicorp/aws registry.custom.com/aws` | Replace an existing provider with another   |
-| `terraform state mv aws_iam_role.my_ssm_role module.mymodule` | Move a resource tracked via state to different module |
-| `terraform state show aws_instance.myinstance`  | Show details stored in the Terraform state file             |
-| `terraform state pull > terraform.tfstate`      | Output Terraform state to a file                            |
-| `terraform state rm aws_instance.myinstance`    | Unmanage a resource, delete it from the Terraform state file |
-| `terraform state list`                         | List all resources tracked in the Terraform state file      |
 
 ### **Import and Outputs**
 | Command                                        | Description                                                |
