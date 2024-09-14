@@ -1,4 +1,4 @@
-## **Python Keywords and Descriptions**
+## ***Python Keyword***
 | Keyword     | Description                                                                                     |
 |-------------|-------------------------------------------------------------------------------------------------|
 | `False`     | Represents the boolean value False.                                                              |
