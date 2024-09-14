@@ -38,6 +38,21 @@
 
 
 
+### **Access Control and RBAC**
+| Command                                        | Description                                                |
+|------------------------------------------------|------------------------------------------------------------|
+| `kubectl get roles`                            | List all roles in the current namespace                    |
+| `kubectl describe role <role_name>`            | Show detailed information about a role                     |
+| `kubectl create role <role_name> --verb=get,list --resource=pods` | Create a role with specific permissions |
+| `kubectl delete role <role_name>`              | Delete a specific role                                     |
+| `kubectl get rolebindings`                     | List all role bindings in the current namespace            |
+| `kubectl describe rolebinding <rolebinding_name>` | Show details about a role binding                       |
+| `kubectl create rolebinding <rolebinding_name> --role=<role_name> --user=<user_name>` | Bind a role to a user|
+| `kubectl delete rolebinding <rolebinding_name>`| Delete a specific role binding                             |
+
+
+
+
 ### **Cluster Management**
 | Command                                        | Description                                                |
 |------------------------------------------------|------------------------------------------------------------|
@@ -59,19 +74,6 @@
 | `kubectl get events`                           | List all events in the cluster                             |
 | `kubectl top node`                             | Display resource (CPU/memory) usage of nodes               |
 | `kubectl top pod`                              | Display resource (CPU/memory) usage of pods                |
-
-### **Access Control and RBAC**
-
-| Command                                        | Description                                                |
-|------------------------------------------------|------------------------------------------------------------|
-| `kubectl get roles`                            | List all roles in the current namespace                    |
-| `kubectl describe role <role_name>`            | Show detailed information about a role                     |
-| `kubectl create role <role_name> --verb=get,list --resource=pods` | Create a role with specific permissions |
-| `kubectl delete role <role_name>`              | Delete a specific role                                     |
-| `kubectl get rolebindings`                     | List all role bindings in the current namespace            |
-| `kubectl describe rolebinding <rolebinding_name>` | Show details about a role binding                       |
-| `kubectl create rolebinding <rolebinding_name> --role=<role_name> --user=<user_name>` | Bind a role to a user|
-| `kubectl delete rolebinding <rolebinding_name>`| Delete a specific role binding                             |
 
 
 
