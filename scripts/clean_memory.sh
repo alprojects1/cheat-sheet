@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Clear PageCache, dentries, and inodes
+#Clear PageCache, dentries, & inodes
 echo "Clearing PageCache, dentries, and inodes..."
 sync; echo 3 > /proc/sys/vm/drop_caches
 
