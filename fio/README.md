@@ -1,8 +1,8 @@
 ## fio (flexible I/O Tester)
 
-
-- ***what this test is not doing: testing a single read/write cycle for the size of the file***   
 - ***what this test is doing: reads/writes for 60 seconds and then outputting the amount of data read/wrote***
+- ***what this test is not doing: testing a single read/write cycle for the size of the file***   
+- ***Wiki: https://fio.readthedocs.io/en/latest/fio_doc.html***
 
 ## ***Benchmarks:*** 
 
