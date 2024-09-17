@@ -16,15 +16,17 @@
 ```sh
 1) nano ~/.local/share/applications/pycharm.desktop
 2) copy and paste below:
-  [Desktop Entry]
-  Version=1.0
-  Type=Application
-  Name=PyCharm Community
-  Icon=/opt/pycharm/bin/pycharm.png
-  Exec="/opt/pycharm/bin/pycharm.sh" %f
-  Comment=Integrated Development Environment for Python
-  Categories=Development;IDE;
-  Terminal=false
-  StartupWMClass=jetbrains-pycharm
+ [Desktop Entry]
+ Version=1.0
+ Type=Application
+ Name=PyCharm
+ Exec="/opt/pycharm-community-2024.2.1/bin/pycharm.sh" %f
+ Icon=/opt/pycharm-community-2024.2.1/bin/pycharm.png
+ Terminal=false
+ Categories=Development;IDE;
+ Comment=The Python IDE for Professional Developers
+ NoDisplay=false
+ StartupNotify=true
+ StartupWMClass=jetbrains-pycharm
 3) chmod +x ~/.local/share/applications/pycharm.desktop
 4) update-desktop-database ~/.local/share/applications/
