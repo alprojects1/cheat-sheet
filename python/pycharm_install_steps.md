@@ -24,7 +24,7 @@
  Icon=/opt/pycharm-community-2024.2.1/bin/pycharm.png
  Terminal=false
  Categories=Development;IDE;
- Comment=The Python IDE for Professional Developers
+ Comment=Python IDE for Professional Developers
  NoDisplay=false
  StartupNotify=true
  StartupWMClass=jetbrains-pycharm
