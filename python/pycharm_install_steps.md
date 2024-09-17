@@ -1,6 +1,6 @@
 ***Packages + Path***
 ```sh
-1) wget https://download.jetbrains.com/python/pycharm-community-2024.2.1-aarch64.tar.gz
+1) wget https://download.jetbrains.com/python/pycharm-community-2024.x.x.tar.gz
 2) cd/Downloads **or where you dl**
 3) tar -xvf pycharm-community-2024.2.1-aarch64.tar.gz
 4) sudo mv pycharm-community-2024.2.1 /opt/pycharm **prefered location** 
