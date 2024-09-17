@@ -8,7 +8,8 @@
 6) export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 
 7) export PATH=$JAVA_HOME/bin:$PATH **Set JAVA_HOME:**
 8) source ~/.bashrc **reload environment:*
-9) /opt/pycharm/bin/pycharm.sh **symbolic link or desktop entry**
+9) /opt/pycharm-community-2024.2.1/bin/pycharm.sh **to run pycharm**
+10. sudo ln -s /opt/pycharm-community-2024.2.1/bin/pycharm.sh /usr/local/bin/pycharm **symbolic-link optional**
 ```
 
 ***Creating Desktop entry***
