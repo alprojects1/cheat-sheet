@@ -1,4 +1,4 @@
-## **GCC Cheat-Sheet**
+## **GCC**
 
 
 ### **Linking Options**
