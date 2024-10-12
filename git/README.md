@@ -1,4 +1,4 @@
-**Git**
+## **Git**
 
 ### **Project and Repository Management**
 | Command                                        | Description                                                |
