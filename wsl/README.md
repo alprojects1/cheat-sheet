@@ -1,14 +1,14 @@
-## **WSL Cheat-Sheet**
+## **WSL**
 
 ### **Backup and Restore WSL**
 | Command                                                      | Description                                                |
 |--------------------------------------------------------------|------------------------------------------------------------|
-| `wsl --import (distribution) (install location) (file location and filename)` | Restore a WSL Distro from Backup                           |
-| `wsl --export (distribution) (filename.tar)`                  | Backup a WSL Distro                                        |
-| `wsl --list --verbose`                                        | List Running Distros                                       |
-| `wsl --distribution <distro>`                                 | Start/Restart a Distro                                     |
-| `wsl --shutdown`                                              | Terminate All Running Distros and WSL process              |
-| `wsl --t <distro>`                                            | Terminate a Running Distro                                 |
+| `wsl --import (distribution) (install location) (file location and filename)` | Restore a WSL Distro from Backup          |
+| `wsl --export (distribution) (filename.tar)`                  | Backup a WSL Distro                                       |
+| `wsl --list --verbose`                                        | List Running Distros                                      |
+| `wsl --distribution <distro>`                                 | Start/Restart a Distro                                    |
+| `wsl --shutdown`                                              | Terminate All Running Distros and WSL process             |
+| `wsl --t <distro>`                                            | Terminate a Running Distro                                |
 
 
 
