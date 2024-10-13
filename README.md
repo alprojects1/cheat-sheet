@@ -1,2 +1,3 @@
-# cheat-sheet
-cheat-cheat
+<p align="center">
+  <strong>🄲🄷🄴🄰🅃-🅂🄷🄴🄴🅃</strong><br>
+</p>
