@@ -1,5 +1,5 @@
 ## ***Networking***
-| Command                                                   | Description                                                       |
+| Command                                                   | Description                                          |
 | -----------------------------------------------------     | -----------------------------------------------      |  
 | `docker network ls`                                       | List all Docker networks                             |
 | `docker network create <network_name>`                    | Create a new Docker network                          |
@@ -30,7 +30,7 @@
 | -------------------------------------------- | ---------------------------------------------------- |
 | `docker exec -it <container_id> <command>`   | Execute a command inside a running container         |
 | `docker exec -it <container_id> /bin/bash`   | Open a bash shell in a running container             |
-| `docker exec -it <container_id> /bin/sh`     | Open a shell in a running container (if bash not available) |
+| `docker exec -it <container_id> /bin/sh`     | Open a shell in a running container (if bash not available)|
 | `docker run -it <image_name> /bin/bash`      | Run a container and immediately access its shell     |
 | `docker run -d <image_name> <command>`       | Run a container in detached mode                     |
 
