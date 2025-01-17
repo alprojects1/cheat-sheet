@@ -13,7 +13,7 @@ ExecStart=/scripts/clear_mem_cache.sh
 ```
 ***Timer***
 ```sh
-2)/etc/systemd/system/clear_mem_cache.timer
+2) nano /etc/systemd/system/clear_mem_cache.timer
 
 [Unit]
 Description=Run clear_mem_cache.service periodically
@@ -36,5 +36,5 @@ WantedBy=timers.target
 ```sh
 1) systemctl list-timers --all | grep clear_mem_cache
 2) sudo systemctl start clear_mem_cache.service
-3) cat /var/log/syslog | grep clear_mem_cache
+3) cat /var/log/syslog | grep clear_mem_cache **if logs are setup**
 ```
